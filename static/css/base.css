@@ -44,6 +44,13 @@ body {
     border: 1px solid black;
 }
 
+.btn-outline-black:hover,
+.btn-outline-black:focus,
+.btn-outline-black:active {
+    background: black;
+    color: white!important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -95,7 +102,28 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /*Media Queries*/
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
 
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
